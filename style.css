@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-column img {
+    max-width: 100%;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-column img:hover {
+    transform: scale(1.1);
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#skills, #projects {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#projects ul li {
+    margin-bottom: 0.5em;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+#projects ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#projects ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#projects ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#projects ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+#projects ul li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+#projects ul li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skill {
+    margin-bottom: 1em;
+}
+
+.skill h3 {
+    margin: 0;
+}
+
+.bar {
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+    width: 100%;
+}
+
+.bar div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    color: white;
+    border-radius: 25px;
+}
+
+.html { width: 100%; background-color: #4CAF50; }
+.css { width: 100%; background-color: #2196F3; }
+.javascript { width: 90%; background-color: #f0db4f; color: black; }
+.react { width: 70%; background-color: #61DBFB; color: black; }
+.version-control { width: 80%; background-color: #e34c26; }
+.basic-it-skills { width: 80%; background-color: #ff5722; }
+.fundamentals-of-computer { width: 100%; background-color: #673ab7; }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: static;
+}
